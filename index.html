@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Cthulu Space</title>
+  </head>
+
+  <body>
+    <canvas></canvas>
+
+    <script type="application/javascript" src="vendor/keymaster.js"></script>
+
+    <script type="application/javascript" src="lib/util.js"></script>
+    <script type="application/javascript" src="lib/movingObject.js"></script>
+    <script type="application/javascript" src="lib/clickIndicator.js"></script>
+    <script type="application/javascript" src="lib/cthulu.js"></script>
+    <script type="application/javascript" src="lib/game.js"></script>
+    <script type="application/javascript" src="lib/gameView.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="game.css">
+
+    <script type="application/javascript">
+      (function () {
+        var canvasEl = document.getElementsByTagName("canvas")[0];
+        canvasEl.width = CthuluSpace.Game.DIM_X;
+        canvasEl.height = CthuluSpace.Game.DIM_Y;
+        var ctx = canvasEl.getContext("2d");
+        var game = new CthuluSpace.Game();
+        new CthuluSpace.GameView(game, ctx).start();
+      })();
+    </script>
+  </body>
+</html>
