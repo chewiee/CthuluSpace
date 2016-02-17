@@ -10,6 +10,7 @@
 
     <script type="application/javascript" src="vendor/keymaster.js"></script>
 
+    <script type="application/javascript" src="lib/imageLoader.js"></script>
     <script type="application/javascript" src="lib/util.js"></script>
     <script type="application/javascript" src="lib/movingObject.js"></script>
     <script type="application/javascript" src="lib/clickIndicator.js"></script>
@@ -28,7 +29,8 @@
         canvasEl.height = CthuluSpace.Game.DIM_Y;
         var ctx = canvasEl.getContext("2d");
         var game = new CthuluSpace.Game();
-        new CthuluSpace.GameView(game, ctx).start();
+        CthuluSpace.ImageLoader = new CthuluSpace.ImageLoader();
+        new CthuluSpace.GameView(game, ctx).startImageLoad();
       })();
     </script>
   </body>
