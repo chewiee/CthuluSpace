@@ -1,3 +1,4 @@
-canvas {
-  margin-left: 500px;
+#canvas-container {
+  width: 600px;
+  margin: auto;
 }
