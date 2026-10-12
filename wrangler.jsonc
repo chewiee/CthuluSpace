@@ -1,0 +1,11 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "cthuluspace",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "."
+  },
+  "routes": [
+    { "pattern": "cthuluspace.rannabansal.com", "custom_domain": true }
+  ]
+}

@@ -1,0 +1,7 @@
+.git
+.wrangler
+.assetsignore
+wrangler.jsonc
+buildspec.yml
+CNAME
+README.md
